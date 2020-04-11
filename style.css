@@ -1,0 +1,499 @@
+/*-------------------------normalize.css v8.0.1-------------------------------*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*-------------------------STYLESHEET-------------------------------*/
+
+.page {
+  padding: 30px 50px 106px;
+  font-family: TT Norms, sans-serif;
+}
+
+.page__filter-devices {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-devices {
+  max-width: 320px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.filter-devices__label {
+  display: block;
+  color: #8C8C8C;
+  cursor: pointer;
+}
+
+.filter-devices__search {
+  margin-top: 16px;
+  margin-right: 20px;
+  padding-left: 12px;
+}
+
+.search {
+  width: 210px;
+  height: 30px;
+  color: #353535;
+}
+
+.filter-devices__button {
+  width: 90px;
+  margin-top: 16px;
+}
+
+.button {
+  height: 40px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid;
+}
+
+.button_default {
+  background: #444651;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-column-gap: 30px;
+}
+
+.unit-name {
+  max-width: 320px;
+  display: flex;
+}
+
+.unit-name__logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.unit-name__name {
+  width: 225px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-feature-settings: "pnum" 1, "onum" 1;
+}
+
+.grid__device-info {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.device-info {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px 18.33px 20px 18.33px;
+  background: #F7F7F7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.device-info__characteristic {
+  float: left;
+  font-weight: 500;
+  color: #8C8C8C;
+}
+
+.device-info__characteristic:after {
+  content: " ";
+  white-space: pre;
+}
+
+.device-info__value {
+  margin-left: 0px;
+  font-weight: 500;
+  color: #444651;
+}
+
+.device-info__value_id {
+  color: #4990E2;
+}
+
+.grid__report-filters {
+  margin-top: 30px;
+}
+
+.report-filters {
+  width: 220px;
+}
+
+.select {
+  display: block;
+  width: 220px;
+  height: 30px;
+  border: 1px solid #E9E9E9;
+  padding-left: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+}
+
+.report-filters__radio-button_first {
+  margin-top: 15px;
+}
+
+.radio-button__old-radio-label {
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.radio-button__old-radio-circle {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+
+.radio-button__new-radio-circle {
+  display: flex;
+}
+
+.radio-button__new-radio-circle:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #C1C1C1;
+  border: 3px solid #FFF;
+  margin-left: 2px;
+  margin-right: 12px;
+  transition: 0.5s ease all;
+  box-sizing: border-box;
+  margin-top: 1px;
+}
+
+.radio-button__old-radio-circle:checked + .radio-button__new-radio-circle:before {
+  background: #4990E2;;
+}
+
+.radio-button__new-radio-label {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.16px;
+}
+
+.report-filters__button {
+  width: 180px;
+  margin-top: 45px;
+}
+
+.button_important {
+  background: #4990E2;
+}
+
+.page__report {
+  margin-top: 46px;
+}
+
+.report {
+  padding: 40px 40px 60px 40px;
+  border: 1px dashed #939DA6;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.report__caption {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 27px;
+}
+
+.scroll-layer {
+  overflow-x: scroll;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+.table__row {
+  border-bottom: 1px dashed #E9E9E9;
+  box-sizing: border-box;
+}
+
+.table__row:last-of-type {
+  border-bottom: none;
+}
+
+.table__cell {
+  padding: 20px 40px 20px 0px;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.table__cell_head {
+  padding: 0px 40px 0px 0px;
+  text-align: left;
+  color: #939DA6;
+  font-weight: 400;
+}
+
+.table__cell_date {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.table__img-representation {
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .page {
+    padding: 25px 25px 30px 25px;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .grid__device-info {
+    margin-top: 30px;
+  }
+
+  .table {
+    width: 780px;
+  }
+
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Regular.eot');
+  src: local('TT Norms Regular'), local('TTNorms-Regular'),
+      url('fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTNorms-Regular.woff2') format('woff2'),
+      url('fonts/TTNorms-Regular.woff') format('woff'),
+      url('fonts/TTNorms-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-Medium.eot');
+  src: local('TT Norms Medium'), local('TTNorms-Medium'),
+      url('fonts/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTNorms-Medium.woff2') format('woff2'),
+      url('fonts/TTNorms-Medium.woff') format('woff'),
+      url('fonts/TTNorms-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+

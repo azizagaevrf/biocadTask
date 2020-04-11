@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>biocadTask</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <form class="filter-devices page__filter-devices">
+      <label class="filter-devices__label" for="search">Enter inventory number, guid or bims id</label>
+      <input class="search filter-devices__search" type="search" id="search" value="A-001234"><button class="button button_default filter-devices__button" type="button">Search</button>
+    </form>
+    <div class="grid">
+      <div class="unit-name">
+        <img class="unit-name__logo" src="images/scale.svg" alt="весы">
+        <div class="unit-name__name">Аналитические весы OHAUS Adventurer АХ324 (B715976163)</div>
+      </div>
+      <dl class="device-info grid__device-info">
+        <dt class="device-info__characteristic">Тип оборудования:</dt>
+          <dd class="device-info__value">Весы</dd>
+        <dt class="device-info__characteristic">Статус:</dt>
+          <dd class="device-info__value">Готов к работе</dd> 
+        <dt class="device-info__characteristic">Изготовитель:</dt>
+          <dd class="device-info__value">Ohaus</dd>
+        <dt class="device-info__characteristic">Модель:</dt>
+          <dd class="device-info__value">AX-123</dd> 
+        <dt class="device-info__characteristic">Ответственное подразделение (ремонт):</dt>
+          <dd class="device-info__value">Группа обслуживания лабораторного оборудования</dd> 
+        <dt class="device-info__characteristic">Эксплуатирующее подразделение:</dt>
+          <dd class="device-info__value">Химико-аналитическая лаборатория 2.0</dd> 
+        <dt class="device-info__characteristic">МОЛ:</dt>
+          <dd class="device-info__value">Иванов Иван Иванович</dd> 
+        <dt class="device-info__characteristic">Территория:</dt>
+          <dd class="device-info__value">г. Санкт-Петербург (Нойдорф)</dd>
+        <dt class="device-info__characteristic">Серийный номер:</dt>
+          <dd class="device-info__value">B715976163</dd>
+        <dt class="device-info__characteristic">GUID:</dt>
+          <dd class="device-info__value device-info__value_id">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</dd> 
+        <dt class="device-info__characteristic">Bims ID:</dt>
+          <dd class="device-info__value device-info__value_id">49db8db1-585f-4b9e-bbf0-8a59698edc8b</dd>
+        <dt class="device-info__characteristic">Tam:</dt>
+          <dd class="device-info__value device-info__value_id">А-001234</dd>
+      </dl>
+      <form class="report-filters grid__report-filters">
+        <select class="select">
+          <option>1 month</option>
+          <option>2 month</option>
+          <option>3 month</option>
+        </select>
+        <div class="radio-button report-filters__radio-button_first">
+          <label class="radio-button__old-radio-label">
+            <input class="radio-button__old-radio-circle" type="radio" name="action" checked>
+            <div class="radio-button__new-radio-circle">
+              <span class="radio-button__new-radio-label">Calibration</span>
+            </div>
+          </label>
+        </div>
+        <div class="radio-button">
+          <label class="radio-button__old-radio-label">
+            <input class="radio-button__old-radio-circle" type="radio" name="action" checked>
+            <div class="radio-button__new-radio-circle">
+              <span class="radio-button__new-radio-label">Measuring</span>
+            </div>
+          </label>
+        </div>
+        <div class="radio-button">
+          <label class="radio-button__old-radio-label">
+            <input class="radio-button__old-radio-circle" type="radio" name="action" checked>
+            <div class="radio-button__new-radio-circle">
+              <span class="radio-button__new-radio-label">Using</span>
+            </div>
+          </label>
+        </div>
+        <button class="button button_important report-filters__button" type="button">Generate report</button>
+      </form>
+    </div>
+    <div class="report page__report">
+      <div class="report__caption">Calibration report</div>
+      <div class="scroll-layer">
+        <table class="table">
+          <tr>
+            <th class="table__cell table__cell_head">Data</th>
+            <th class="table__cell table__cell_head">Used buffer solutions</th>
+            <th class="table__cell table__cell_head">Slope, %<br>Norm 95-105</th>
+            <th class="table__cell table__cell_head">Offset, mV<br>Norm ±(0-20)</th>
+            <th class="table__cell table__cell_head">User</th>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell_date">04.10.19<br>10:23</td>
+            <td class="table__cell">
+              В1: № 2000460789536: pH 1.09<br>
+              В2: № 2000460789536: pH 2.00<br>
+              В3: № 2000460789536: pH 4.01<br>
+              В4: № 2000460789536: pH 7.00<br>
+              В5: № 2000460789536: pH 9.21
+            </td>
+            <td class="table__cell">
+              98.7
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">
+              -0.3
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">Иванов Генадий Петрович</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell_date">04.10.19<br>10:23</td>
+            <td class="table__cell">
+              В1: № 2000460789536: pH 1.09<br>
+              В2: № 2000460789536: pH 2.00<br>
+              В3: № 2000460789536: pH 4.01<br>
+              В4: № 2000460789536: pH 7.00<br>
+              В5: № 2000460789536: pH 9.21
+            </td>
+            <td class="table__cell">
+              98.7
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">
+              -0.3
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">Петров Иван Генадьевич</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell_date">04.10.19<br>10:23</td>
+            <td class="table__cell">
+              В1: № 2000460789536: pH 1.09<br>
+              В2: № 2000460789536: pH 2.00<br>
+              В3: № 2000460789536: pH 4.01<br>
+              В4: № 2000460789536: pH 7.00<br>
+              В5: № 2000460789536: pH 9.21
+            </td>
+            <td class="table__cell">
+              98.7
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">
+              -0.3
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">Петров Генадий Иванович</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__cell table__cell_date">04.10.19<br>10:23</td>
+            <td class="table__cell">
+              В1: № 2000460789536: pH 1.09<br>
+              В2: № 2000460789536: pH 2.00<br>
+              В3: № 2000460789536: pH 4.01<br>
+              В4: № 2000460789536: pH 7.00<br>
+              В5: № 2000460789536: pH 9.21
+            </td>
+            <td class="table__cell">
+              90.1
+              <img class="table__img-representation" src="images/cross.svg" alt="крестик">
+            </td>
+            <td class="table__cell">
+              -0.5
+              <img class="table__img-representation" src="images/tick.svg" alt="галочка">
+            </td>
+            <td class="table__cell">Генадьев Иван Петрович</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
